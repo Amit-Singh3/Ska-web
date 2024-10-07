@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKA Gallery</title>
+    <link rel="icon" href="images/logo.jpeg"/>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://kit.fontawesome.com/b7c71b3114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- --------------navbar------------------- -->
+    <header class="container">
+        <nav>
+            <a href="#"><img src="images/logofinaltree.png" alt="logo" class="logo"></a>
+            <ul class="navbar">
+                <li><a href="index.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- -----------------photos-------------------- -->
+
+    <div class="photos-section">
+        <div class="heading">
+            <h3>Gallery</h3>
+        </div>
+        <div class="box">
+            <div class="column">
+                <img src="images/2.jpg" alt="" onclick="openImage(this)">
+                <img src="images/3.jpg" alt="" onclick="openImage(this)">
+                <img src="images/4.jpg" alt="" onclick="openImage(this)">
+                <img src="images/trophy.jpeg" alt="" onclick="openImage(this)">
+            </div>
+            <div class="column">
+                <img src="images/5.jpg" alt="" onclick="openImage(this)">
+                <img src="images/6.jpg" alt="" onclick="openImage(this)">
+                <img src="images/7.jpg" alt="" onclick="openImage(this)">
+                <img src="images/senior-1.JPG" alt="" onclick="openImage(this)">
+            </div>
+            <div class="column">
+                <img src="images/8.jpg" alt="" onclick="openImage(this)">
+                <img src="images/9.jpg" alt="" onclick="openImage(this)">
+                <img src="images/10.jpg" alt="" onclick="openImage(this)">
+                <img src="images/11.JPG" alt="" onclick="openImage(this)">
+            </div>
+        </div>
+    
+        <!-- Fullscreen Image Viewer -->
+        <div id="lightbox" class="lightbox" onclick="closeImage()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="fullImage">
+        </div>
+    </div>
+
+    
+    <script src="gallery.js"></script>
+
+</body>
+</html>
